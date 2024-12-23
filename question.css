@@ -1,0 +1,66 @@
+Jhomel Red * {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz {
+  width: 60%;
+  border: 1px solid #ff5945;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.quiz h1 {
+  margin: 0.5rem;
+  border-bottom: 1px solid black;
+}
+.container-quiz #question {
+  margin: 0.5rem;
+  text-align: center;
+}
+
+.answer-button .btn {
+  border: none;
+  border: 1px solid black;
+  border-radius: 8px;
+  background: transparent;
+  padding: 1rem;
+  width: 100%;
+  transition: all 0.3s;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.answer-button .btn:hover:not([disabled]) {
+  color: white;
+  background-color: #ff5945;
+}
+
+.answer-button .btn:disabled {
+  cursor: no-drop;
+}
+
+#next-button {
+  border: none;
+  color: white;
+  background-color: #ff5945;
+  border-radius: 10px;
+  padding: 0.7rem;
+  cursor: pointer;
+}
+
+.answer-button .btn.correct {
+  background: #9aeabc;
+}
+.answer-button .btn.wrong {
+  background: #ff5945;
+}
